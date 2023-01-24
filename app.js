@@ -1,11 +1,9 @@
 var btnTranslate = document.querySelector("#btn-translate");//hey browser, query this id #
 var txtInput = document.querySelector("#txt-input");
-
-console.log(txtInput);
+var outputDiv = document.querySelector("#output");
 
 function clickHandler(){
-    console.log("clicked");
-    console.log("input",txtInput.value);
+    outputDiv.innerText = "afdgfdhdfhgdh" + txtInput.value ;
 }
 
 btnTranslate.addEventListener("click",clickHandler); //on that id, add a listner click, and if clicked, call function to show in console that it was clicked
